@@ -30,6 +30,8 @@
     --modal-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+    /* animation */
+    --transition-bezier: cubic-bezier(0.4, 0, 0.2, 1);        
 }
 
 
@@ -157,7 +159,7 @@ button {
 }
 
 .current::after {
-    display: none;
+    display: block;
     content: "";
     position: absolute;
     background-color: var(--menu-background-hover);
@@ -216,7 +218,9 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-text)
-
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .nav-link:hover,
@@ -240,7 +244,6 @@ button {
 
 .address-item:not(:last-child) {
     margin-right: 40px;
-
 }
 
 .address-link {
@@ -250,6 +253,9 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--address-link-text);
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .address-link:hover,
@@ -283,17 +289,9 @@ button {
     rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
     background-repeat: no-repeat;
-
     background-position: center;
-    background-size: cover;
-    
-    text-align: center;
-    
-}
-
-
-.hero-content {
-    
+    background-size: cover;    
+    text-align: center;    
 }
 
 .hero-button-order {
@@ -315,6 +313,9 @@ button {
     box-shadow: 0px 4px 4px var(--hero-box-shadow);
     border-radius: 4px;
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .hero-button-order:hover,
@@ -343,8 +344,7 @@ button {
 }
 
 .descr-list {
-    display: flex;  
- 
+    display: flex;   
 }
 
 .descr-img {
@@ -355,10 +355,6 @@ button {
     height: 112px;
     border-radius: 4px;
     margin-bottom: 8px;
-}
-
-.descr-svg {
-
 }
 
 .descr-item {
@@ -389,10 +385,6 @@ button {
     padding-bottom: 120px;
 }
 
-.work-content {
-
-}
-
 .work-list {
     display: flex;
     justify-content: center;
@@ -419,13 +411,8 @@ button {
     padding: 120px 0;
 }
 
-.team-info-content {
-    
-}
-
 .team-info-list {
     display: flex;
-
 }
 
 .team-info-item {
@@ -474,9 +461,6 @@ button {
     gap: 24px;
 }
 
-.socials-item {
-
-}
 
 .socials-link {
     display: flex;
@@ -486,6 +470,9 @@ button {
     height: 40px;
     background-color: var(--accent-color);
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .socials-link:hover,
@@ -530,6 +517,9 @@ button {
     border: 1px solid var(--gray-hover);
     border-radius: 4px;
     color: var(--gray-hover);
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .cust-icon {
@@ -570,11 +560,6 @@ button {
     background-color: var(--accent-text);
     padding: 100px 0;
 }
-
-.footer-logo-sec {
-
-}
-
 
 .logotype-link-footer {
     display: inline-block;
@@ -618,10 +603,6 @@ button {
     gap: 16px;
 }
 
-.soc-item-footer {
-    
-}
-
 .soc-icon-footer {
     fill: var(--menu-background-normal);
 }
@@ -634,6 +615,9 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .soc-link-footer:hover,
@@ -680,6 +664,9 @@ button {
     color: var(--accent-color);
     border-radius: 4px;
     background-color: var(--menu-background-normal);
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .menu-button:hover,
@@ -709,6 +696,9 @@ button {
 .icons-link-img:hover,
 .icons-link-img:focus {
     box-shadow: var(--portfolio-card-shadow);
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .wrapper-icons {
@@ -717,7 +707,6 @@ button {
 }
 
 .overlay {
-    /* display: flex; */
     position: absolute;
     overflow: hidden;
     padding: 40px 32px 164px 32px;
@@ -754,6 +743,9 @@ button {
 .menu-border:hover,
 .menu-border:focus {
     border-color: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 
@@ -821,8 +813,13 @@ button {
     border-radius: 50%;
 }
 
-.close-modal-svg {
-
+.close-modal:hover,
+.close-modal:focus {
+    fill: var(--usual-white);
+    background-color: var(--menu-background-hover);
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-bezier);
+    transition-delay: 0;
 }
 
 .backdrop {}
