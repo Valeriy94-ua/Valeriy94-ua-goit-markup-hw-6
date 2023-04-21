@@ -544,9 +544,15 @@ button {
 .footer-content {
     display: flex;
     align-items: baseline;
-    gap: 120px;
 }
 
+.footer-logo-sec{
+    margin-right: 120px;
+}
+
+.footer-wrap {
+    margin-right: 80px;
+}
 
 .footer-section {
     background-color: var(--accent-text);
@@ -985,10 +991,15 @@ button {
     line-height: 1.5;
 }
 
-.footer-input-wrapper {
+.footer-subscribe-input {
     display: flex;
     gap: 24px;
 }
+
+/* .footer-input-wrapper {
+    display: flex;
+    gap: 24px;
+} */
 
 /**
   |============================
