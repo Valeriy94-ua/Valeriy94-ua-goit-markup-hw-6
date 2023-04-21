@@ -756,7 +756,6 @@ button {
     background-color: var(--bg-modal);
     transition-property: opacity, visibility;
     transition: var(--transition-bezier);
-
 }
 
 .modal {
@@ -813,9 +812,6 @@ button {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
-    /* gap: 8px; */
-    /* display: block; */
-    /* margin-bottom: 15px; */
 }
 
 .form-name {
@@ -828,9 +824,7 @@ button {
 }
 
 .form-input {
-    /* margin-bottom: 8px; */
     width: 100%;
-    /* border-color: ; */
     border: 1px solid var(--gray-hover);
     border-radius: 4px;
     height: 40px;
@@ -858,7 +852,6 @@ button {
     outline: 1px solid transparent;
     border-radius: 4px;
     transition: var(--transition-bezier);
-    /* outline: 1px; */
 }
 
 .form-message:hover {
@@ -872,7 +865,6 @@ button {
 }
 
 .form-icon {
-    /* fill: var(--accent-text); */
     position: absolute;
     bottom: 15%;
     left: 10px;
@@ -890,7 +882,6 @@ button {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -983,7 +974,6 @@ button {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    /* padding: 24px 8px; */
     width: 165px;
     height: 40px;
     color: var(--usual-white);
@@ -995,17 +985,9 @@ button {
     line-height: 1.5;
 }
 
-.footer-label-input {
-    /* display: flex; */
-}
-
 .footer-input-wrapper {
     display: flex;
     gap: 24px;
-}
-
-.icon-subscribe-footer {
-
 }
 
 /**
